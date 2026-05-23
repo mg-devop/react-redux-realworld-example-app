@@ -1,0 +1,34 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:700|Source+Serif+Pro:400,700|Merriweather+Sans:400,700|Source+Sans+Pro:400,300,600,700,300italic,400italic,600italic,700italic');
+
+/* Global Reset & Centering Layout */
+body { font-family: 'Source Sans Pro', sans-serif; font-size: 16px; color: #373a3c; background-color: #fff; line-height: 1.5; }
+.container { max-width: 1140px !important; margin: 0 auto !important; float: none !important; padding-left: 15px; padding-right: 15px; }
+.row { margin-left: -15px; margin-right: -15px; display: block; clear: both; }
+
+/* Navbar Clean Styling Alignment */
+.navbar { border-radius: 0; font-family: 'Titillium Web', sans-serif; border: none; background: #fff !important; min-height: 56px; margin-bottom: 0; border-bottom: 1px solid #f3f3f3; }
+.navbar-brand { font-family: 'Titillium Web', sans-serif; font-size: 1.5rem !important; padding: 15px !important; color: #5CB85C !important; font-weight: 700; float: left; }
+.navbar-nav { float: right; margin: 0; display: flex; list-style: none; }
+.navbar-nav > li { float: left; display: block; }
+.navbar-nav > li > a { color: rgba(0,0,0,0.3) !important; padding: 15px 12px !important; display: block; font-size: 1rem; text-decoration: none; }
+.navbar-nav > li > a:hover { color: rgba(0,0,0,0.6) !important; }
+
+/* Feed Layout Spacing Adjustments */
+.feed-toggle { margin-bottom: 1.5rem; border-bottom: 1px solid #edd; }
+.nav-pills > li > a { border-radius: 0; color: #aaa !important; background: none !important; padding: 10px 15px; display: block; text-decoration: none; }
+.nav-pills > li.active > a { border-bottom: 2px solid #5CB85C !important; color: #5CB85C !important; font-weight: 500; }
+
+/* Popular Tags Panel Blueprint */
+.sidebar { background: #f3f3f3; padding: 10px 20px 20px 20px; border-radius: 4px; margin-top: 20px; }
+.sidebar p { font-weight: 500; margin-bottom: 0.5rem; margin-top: 0; color: #373a3c; }
+.tag-list { display: flex; flex-wrap: wrap; gap: 4px; list-style: none; padding: 0; }
+.tag-default { background-color: #818a91; color: #fff !important; font-size: 0.6875rem; padding: 0.2rem 0.4rem; border-radius: 10rem; display: inline-block; text-decoration: none; }
+.tag-default:hover { background-color: #687076; text-decoration: none; }
+
+/* Utility Grid Fallbacks */
+.col-md-9 { width: 75%; float: left; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
+.col-md-3 { width: 25%; float: left; position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
+
+/* Hide broken image metrics cleanly */
+.navbar img { display: none !important; }
