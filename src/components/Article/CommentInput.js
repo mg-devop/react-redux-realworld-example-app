@@ -41,8 +41,9 @@ class CommentInput extends React.Component {
         </div>
         <div className="card-footer">
           <img
-            src={this.props.currentUser.image}
+            src={this.props.currentUser.image || `https://ui-avatars.com/api/?name=${this.props.currentUser.username}&size=64&background=random`}
             className="comment-author-img"
+            style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }}
             alt={this.props.currentUser.username} />
           <button
             className="btn btn-sm btn-primary"
