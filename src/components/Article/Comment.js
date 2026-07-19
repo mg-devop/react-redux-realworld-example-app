@@ -15,7 +15,12 @@ const Comment = props => {
         <Link
           to={`/@${comment.author.username}`}
           className="comment-author">
-          <img src={comment.author.image} className="comment-author-img" alt={comment.author.username} />
+          <img
+            src={comment.author.image || `https://ui-avatars.com/api/?name=${comment.author.username}&size=64&background=random`}
+            style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }}
+            className="comment-author-img"
+            alt={comment.author.username}
+          />
         </Link>
         &nbsp;
         <Link
