@@ -127,7 +127,17 @@ class Profile extends React.Component {
 
                 <img
                   src={profile.image || `https://ui-avatars.com/api/?name=${profile.username}&size=128&background=random`}
-                  style={{ width: '100px', height: '100px', borderRadius: '50%', objectFit: 'cover', display: 'block', margin: '0 auto 1rem' }}
+                  className="user-img"
+                  style={{ 
+                    width: '80px', 
+                    height: '80px', 
+                    borderRadius: '50%', 
+                    objectFit: 'cover', 
+                    display: 'block', 
+                    margin: '0 auto 1rem',
+                    minWidth: '80px',
+                    maxWidth: '80px'
+                  }}
                   alt={profile.username}
                 />
                 <h4>{profile.username}</h4>
