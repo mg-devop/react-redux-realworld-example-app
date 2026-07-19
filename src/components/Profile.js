@@ -124,23 +124,22 @@ class Profile extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-xs-12 col-md-10 offset-md-1">
+                
+                {/* Flexbox container for image and username */}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '15px', marginBottom: '10px' }}>
+                  <img
+                    src={profile.image || `https://ui-avatars.com/api/?name=${profile.username}&size=128&background=random`}
+                    style={{ 
+                      width: '50px', 
+                      height: '50px', 
+                      borderRadius: '50%', 
+                      objectFit: 'cover'
+                    }}
+                    alt={profile.username}
+                  />
+                  <h4 style={{ margin: 0 }}>{profile.username}</h4>
+                </div>
 
-                <img
-                  src={profile.image || `https://ui-avatars.com/api/?name=${profile.username}&size=128&background=random`}
-                  className="user-img"
-                  style={{ 
-                    width: '80px', 
-                    height: '80px', 
-                    borderRadius: '50%', 
-                    objectFit: 'cover', 
-                    display: 'block', 
-                    margin: '0 auto 1rem',
-                    minWidth: '80px',
-                    maxWidth: '80px'
-                  }}
-                  alt={profile.username}
-                />
-                <h4>{profile.username}</h4>
                 <p>{profile.bio}</p>
 
                 <EditProfileSettings isUser={isUser} />
